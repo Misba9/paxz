@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #09153f;
+}
+
+.conus-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 693px;
+    /* background-color: rgb(208, 202, 203); */
+}
+
+.conus-container-in{
+    width: 50vw;
+    height: 83vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.conus-headding{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.conus-para{
+    color: rgba(5, 2, 2, 0.572);
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.5rem;
+    font-size: 19px;
+    color: white;
+}
+
+#conus-form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 550px;
+    padding: 2vw 5vw;
+}
+
+#conus-form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border-bottom: solid 2px pink;
+    outline: none;
+    background-color: #e4dfdf;
+    font-size: 15px;
+    font-family: serif;
+}
+
+.conus-submit{
+    border: 0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border-bottom: solid 2px pink;
+    outline: none;
+    background-color: rgb(67, 67, 253);
+    opacity: 1;
+    font-size: medium;
+    color: white;
+    cursor: pointer;
+    /* border-bottom: solid 5px rgb(131, 131, 232); */
+}

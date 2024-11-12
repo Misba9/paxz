@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "9kubbrydrLYEsvbVm",
+                });
+            })();
+        </script> 
+</head>
+<body>
+    <body>
+        <div class="container">
+            <div class="popup"  id="popup">
+                <img  src="https://res.cloudinary.com/dy2hdwuuv/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1729350444/404-tick_if9oc3.png" alt="no">
+                <form id="contactForm2">
+                    <div><h2>Thank You For Visiting Us</h2></div>
+                    
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Mobile number" required>
+        
+                    <button type="submit" onclick="closepopup">Send Message</button>
+                </form>
+                 <!-- <script src="Script.js"></script> -->
+                <script>
+                      document.getElementById('contactForm2').addEventListener('submit', function(event) {
+                         event.preventDefault();
+                      emailjs.sendForm('service_jeevan', 'template_jeevan', this).then(function() {
+                      alert('Your message has been sent successfully!');
+                         }, function(error) {
+                      alert('Failed to send the message, please try again later.');
+                         });
+                     });
+                </script>
+            </div>
+        </div>
+    
+    </body>
+</body>
+</html>

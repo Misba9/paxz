@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-us.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "hIABVPpCbXigdi8OF",
+                });
+            })();
+        </script>    
+</head>
+<body>
+    <div class="conus-container">
+        <div class="conus-container-in">
+            <h1 class="conus-headding">Contact Us</h1>
+            <p class="conus-para">Do you have any queries or suggestions? Kindly send your<br>
+                request details using the following form:</p>
+            <form id="conus-form">
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                <input type="tel" id="phone" name="phone" placeholder="Mobile number" required>
+                <input type="text" id="city" name="city" placeholder="Location" required>
+                <textarea name="message" id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                <button type="submit" class="conus-submit">Send Message</button>
+            </form>
+            <!-- <script src="Script.js"></script> -->
+    <script>
+        document.getElementById('conus-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+        emailjs.sendForm('service_pax', 'template_pax2', this).then(function() {
+            alert('Your message has been sent successfully!');
+        }, function(error) {
+            alert('Failed to send the message, please try again later.');
+        });
+    });
+    </script>
+        </div>
+    </div>
+    
+</body>
+</html>

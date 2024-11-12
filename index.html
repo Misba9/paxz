@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAX-Z</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="review.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- javascript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "9kubbrydrLYEsvbVm",
+            });
+        })();
+    </script>
+    <script>
+        let pop = document.getElementById("popup");
+
+        function openpopup() {
+            popup.classList.add("open-popup");
+        }
+        function closepopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <div class="navbar">
+        <img src="https://res.cloudinary.com/dy2hdwuuv/image/upload/v1729159814/logo_ej5eo9.jpg" alt="no">
+        <ul class="nav-in" id="nav-menu">
+            <li><a href="#home" class="text-2xl">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#pricing-page">Princing</a></li>
+            <li><a href="#about-page">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <button id="reg" onclick="openpopup()">Register</button>
+        </ul>
+        <!-- Hamburger & Close icons -->
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="close" id="close-btn" onclick="toggleMenu()">&times;</div>
+    </div>
+
+
+    <!-- Register pop-up -->
+    <div class="Registration-container">
+        <div class="popup" id="popup">
+            <img src="https://res.cloudinary.com/dy2hdwuuv/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1729350444/404-tick_if9oc3.png"
+                alt="no">
+            <form id="contactForm2">
+                <div>
+                    <h2 style="background-color: white;">Thank You For Visiting Us</h2>
+                </div>
+                <div class="reg-con-input">
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Mobile number" required>
+                </div>
+                <button type="submit" onclick="closepopup()">Send Message</button>
+            </form>
+            <!-- <script src="Script.js"></script> -->
+            <script>
+                document.getElementById('contactForm2').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_jeevan', 'template_jeevan', this).then(function () {
+                        alert('Your message has been sent successfully!');
+                    }, function (error) {
+                        alert('Failed to send the message, please try again later.');
+                    });
+                });
+            </script>
+        </div>
+    </div>
+
+    <!-- Body page -->
+    <!-- /* first info start */ -->
+    <div class="row">
+        <div class="col-2">
+            <h1>Connect With Trusted <br>
+                <span class="span-t">Psychologist,
+                    Anytime,</span><br>Anywhere
+            </h1>
+
+            <p>Find The assistance you require to Succeed.our committed team is available to support you at every
+                stage.</p>
+
+            <div class="count" style="display: flex; gap: 4rem;">
+                <div>
+                    <h3>400+ </h3>
+                    <p>Active psychologists</p><br>
+                </div>
+                <div>
+                    <h3>80+ </h3>
+                    <p>Active Stores</p>
+                </div>
+                <div>
+                    <h3>10k+ </h3>
+                    <p>Active Users</p>
+                </div>
+                <br>
+            </div>
+
+                <!-- <s15>Active</s15>
+                <s16>Active</s16>
+                <s19>Active</s19>
+                <br>
+                <s15>psychologists</s15>
+                <s20>Stores</s20>
+                <s21>Users</s21> -->
+                <br>
+            <a href="" class="btn">Get Started </a>
+            <s23><a href="#reg" class="btn1">Talk to a psychologist </a></s23>
+            <br>
+            <s25>Live sessions with psychologist</s25>
+            <br>
+            <br>
+            <video
+                src="https://res.cloudinary.com/dgyjutapc/video/upload/v1729275837/Untitled_video_-_Made_with_Clipchamp_suur3l.mp4"
+                autoplay loop muted></video>
+        </div>
+        <div class="con-scroll">
+            <div class="scroll-container">
+                <div class="image-list">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868529/n6_jcqpz6.jpg"
+                        alt="Image 1">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868528/n1_iq6y4y.jpg"
+                        alt="Image 2">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729882634/n11_a2cxh1.jpg"
+                        alt="Image 6">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868528/n5_cgmlzz.jpg"
+                        alt="Image 3">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868528/n3_pjs5tv.jpg"
+                        alt="Image 4">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868527/n2_dfq4vk.jpg"
+                        alt="Image 5">
+                </div>
+
+            </div>
+            <div class="scroll-container">
+                <div class="image-list1">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868527/n2_dfq4vk.jpg"
+                        alt="Image 1">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868528/n3_pjs5tv.jpg"
+                        alt="Image 2">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868528/n5_cgmlzz.jpg"
+                        alt="Image 3">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729882634/n11_a2cxh1.jpg"
+                        alt="Image 6">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868528/n1_iq6y4y.jpg"
+                        alt="Image 4">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868529/n6_jcqpz6.jpg"
+                        alt="Image 5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /* first info end */ -->
+    <br><br>
+    <section id="service">
+        <h2>Quality Health Care Services</h2>
+        <p>Providing Healthy Care Services, Therapist, and Online Consultancy</p>
+    </section>
+    <section class="mcontainer-2">
+        <div class="mone-1">
+            <h2>Mental Health Support Anytime, Anywhere</h2>
+            <p><strong>What You'll Get:</strong></p>
+            <ul>
+                <li><strong>Personalized Guidance:</strong> Speak with a licensed therapist to discuss your concerns
+                    and explore the best therapy options for you.</li>
+                <li><strong>No Obligation:</strong> This initial consultation is completely free, with no commitment
+                    required.</li>
+                <li><strong>Tailored Recommendations:</strong> Get expert advice on the most suitable approach for
+                    your mental health needs.</li>
+            </ul>
+            <button>Try Free Consultation</button>
+        </div>
+        <div class="mtwo-2">
+            <!-- <div class="free2"> -->
+            <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729877545/m2_pbz28k.jpg"
+                alt="Mental Health Support Image" height="400px" width="240px">
+        </div>
+    </section>
+
+    <section class="m-container">
+        <div class="mone">
+            <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729877545/m2_pbz28k.jpg"
+                alt="Step-by-Step Image" height="400px" width="350px">
+        </div>
+        <div class="mtwo">
+            <h2>How to Get Registered in <span>4 Easy Steps</span></h2>
+            <p><strong>How It Works:</strong></p>
+            <ul>
+                <li><strong>Sign Up:</strong> Create your account on our platform in just a few minutes by providing
+                    your basic details.</li>
+                <li><strong>Schedule Your Free Consultation:</strong> Choose a convenient time to talk with a
+                    therapist.</li>
+                <li><strong>Begin Your Mental Health Journey:</strong> Get ongoing therapy or initial advice from
+                    our team.</li>
+                <li><strong>Join Your Free Session:</strong> Log in for a seamless online consultation via chat,
+                    voice, or video.</li>
+            </ul>
+            <button class="get-support">Get Support</button>
+        </div>
+    </section>
+
+    <section class="mcontainer-2">
+        <div class="mone-1">
+            <h2>Why Pax-Z is Your <span>Best Mental Health Partner</span></h2>
+            <p><strong>Why Choose Pax-Z?</strong></p>
+            <ul>
+                <li><strong>24/7 Mental Health Support:</strong> Access therapy anytime, anywhere with licensed
+                    therapists available 24/7.</li>
+                <li><strong>Affordable, Pay-Per-Minute Pricing:</strong> Only pay for the time you need, making
+                    therapy accessible for everyone.</li>
+                <li><strong>Personalized Care:</strong> Receive customized therapy plans tailored specifically to
+                    your mental health journey.</li>
+            </ul>
+        </div>
+        <div class="mtwo-2">
+            <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729878213/m5_m4rppc.jpg"
+                alt="Pax-Z Benefits Image" height="400px" width="350px">
+        </div>
+    </section>
+
+    <br><br> <br><br>
+    <!-- Pricing page -->
+
+    <div id="pricing-page">
+        <!-- <div class="price-btn"><button>Pricing</button></div> -->
+        <div class="price-btn"><button>How Our Pricing Works</button></div>
+        <div id="con-prc">
+            <div class="prc-part1">
+                <div class="prc1">
+                    <!-- <h1>How Our Pricing Works</h1> -->
+                    <h1>Pay for What You Use</h1>
+                    <p>You only pay for the minutes spent in a session, making therapy affordable and flexible for
+                        any budget.</p>
+                    <div class="prc1-img">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868528/n1_iq6y4y.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729868527/n2_dfq4vk.jpg" alt="no">
+                    </div>
+                </div>
+                <div class="prc2">
+                    <div class="prc21">
+                        <div class="cont">
+                            <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729673636/3d-cube_mexyya.gif"
+                                alt="no">
+                            <h2>Affordable <span>Therapy for All</span></h2>
+                        </div>
+
+                        <p>Pax-Z is committed to making therapy affordable for all users by offering a range of
+                            price points depending on the therapist's experience and specialization.</p>
+                    </div>
+                    <div class="prc21">
+
+                        <div class="cont">
+                            <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729673636/3d-cube_mexyya.gif"
+                                alt="no">
+                            <h2>Therapy on <span>Your Terms</span></h2>
+                        </div>
+                        <p>Pay-as-you-go with no long- term commitments. Pax-Z ensures you only invest in therapy
+                            when it's needed, giving you total control of your expenses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prc-part2">
+                <div class="prc3">
+                    <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729882634/n11_a2cxh1.jpg" alt="no">
+                    <div class="prc3-div">
+                        <h1>Session Rates Based on Expertise</h1>
+                        <p>The rate for each session varies depending on the experience and qualifications of the
+                            therapist. This allows you to choose a therapist who fits your needs and budget.</p>
+                    </div>
+                </div>
+                <div class="prc4">
+                    <h1>No Subscriptions <br>Required</h1>
+                    <p>Unlike other platforms, we don't lock you into monthly subscriptions. Pay for sessions when
+                        you need them, without any ongoing fees. We understand that life can be unpredictable.
+                        Cancel or reschedule a session with no extra charge, provided it's done within a reasonable
+                        time frame.</p>
+                    <div class="prc4-img">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729882883/b_j50axi.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729882880/a_b21rio.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729882873/c_glh1qi.jpg" alt="no">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About-page -->
+
+    <div id="about-page">
+        <button class="abt-btn">About-us</button>
+        <div class="con-abt">
+            <div class="abt-content">
+                <h2>Our Commitment to You</h2>
+                <p> <span>At Pax-Z</span> we are dedicated to making mental health support more accessible, affordable,
+                    and convenient for everyone. We understand that life's challenges can be overwhelming, and finding
+                    the right support shouldn't be. That's why we've created a platform that connects people with
+                    licensed therapists 24/7, offering professional care anytime, anywhere.</p>
+                <p> <span>Our mission</span> is simple to empower individuals to take control of their mental well-being
+                    by providing personalized therapy services, all from the comfort of their home. Whether you're
+                    dealing with stress, anxiety, depression, or just need someone to talk to, Pax-Z is here to offer
+                    holistic support</p>
+                <p> <span>We are committed</span> to creating a safe, supportive, and compassionate space where you can
+                    feel heard and understood. Our team of licensed therapists is dedicated to helping you navigate
+                    life's challenges, offering a range of expertise to ensure you find the right support.</p>
+            </div>
+            <div class="abt-content1" xyz>
+                <h2>Why We're Different:</h2>
+                <p> <span>24/7 Access to Therapists:</span> Life doesn't stick to a schedule, and neither do we. With
+                    Pax-Z, you can reach out for help anytime you need it.</p>
+                <p> <span>Affordable Pay-Per-Minute Pricing:</span> We believe that everyone should have access to
+                    quality therapy, so we've designed a model where you only pay for the time you use.</p>
+                <p> <span>Personalized Mental Health Journey:</span> Every person's needs are unique. We offer
+                    customized therapy plans and a range of resources tailored to fit your mental health goals.</p>
+                <p> <span>Comprehensive Resources:</span> Beyond therapy, Pax-Z provides a variety of resources like
+                    motivational posts, podcasts, and self- assessment tools to help you stay on track.</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- GetStarted -->
+    <div class="con-GetStarted">
+        <div class="con-GetStarted1">
+            <h1>Get <span>started with PAX-Z</span></h1>
+            <p>Ready to take the first step toward better mental health? It's easy to begin your journey with Pax-Z.</p>
+            <button type="submit">Lets Get Started</button>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="body-footer">
+        <section class="reviews-section">
+            <h1 class="reviews-title">Reviews from customers</h1>
+            <p class="reviews-subtitle">Loving Feedback from Our Clients</p>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729879686/r2_zynr0g.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729879689/r4_zdsp59.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729879691/r5_awhdkx.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729879691/r7_ao4wjl.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729879689/r8_j0pfed.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729879688/r6_qi61rt.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729879687/r1_dtwkap.jpg" alt="no">
+                        <img src="https://res.cloudinary.com/dgyjutapc/image/upload/v1729879687/r3_th4viq.jpg" alt="no">
+                        <!-- Add more images as needed -->
+                    </div>
+                    <div class="carousel-btn">
+                        <button id="previous-btn" onclick="prevSlide()">‹</button>
+                        <button id="next-btn" onclick="nextSlide()">›</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer Section -->
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="https://res.cloudinary.com/dy2hdwuuv/image/upload/v1729159814/logo_ej5eo9.jpg" alt="PAX-Z"
+                        class="footer-logo">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to receive updates and exclusive offers.</p>
+                    <form class="f-form">
+                        <div>
+                            <input type="email" placeholder="Enter your email">
+                            <button type="submit">submit</button>
+                        </div>
+                        <br>
+                        <p>By Subscribing you agree to our privacy policy and consent to receive </p>
+                        <p>updates from us.</p>
+                    </form>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <h3>About US</h3>
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>Pricing</li>
+                        <li>About US</li>
+                        <li>Meet our psychologists</li>
+                        <li>Reviews</li>
+                        <li>Book an Appointment</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <p>Phone: +91 9347012418</p>
+                    <p>Email: info@pax-z.com</p>
+                    <p>Address: Hyderabad</p>
+                    <h3>Legal Information</h3>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookie Policy</p>
+                </div>
+                <!-- <div class="footer-column">
+                </div> -->
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="paragraph"> 
+                <div>
+                    <p8>2024 Pax-z. All right reserved </p8>
+                    <p8>Terms & condition</p8>
+                    <p8>Privacy policy</p8>
+                    <p8>Cookies policy</p8>
+                </div>
+                <div id="Footer-icons">
+                    <i class="insta"><a href="https://www.instagram.com/pax__z?igsh=OGN6OGtpbGRzdG03"><i
+                                class="fa-brands fa-instagram"></i></a></i>
+                    <i class="youtube"><i class="fa-brands fa-youtube"></i></i>
+                    <i class="linked-in"><i class="fa-brands fa-linkedin"></i></a></i>
+                    <i class="twitter"><i class="fa-brands fa-x-twitter"></i></i>
+                    <i class="whatsapp"><i class="fa-brands fa-whatsapp"></i></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
